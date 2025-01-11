@@ -11,7 +11,7 @@ public:
         // number of 1st < k
         int one_count = 0;
         for(auto& [ch,freq] : map){
-            if(freq % 2){
+            if(freq & 1){
                 one_count ++;
             }
         }
